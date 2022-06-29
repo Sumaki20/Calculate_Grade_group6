@@ -1,0 +1,116 @@
+﻿<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pagewrap" style="height: auto !important;">
+
+
+
+
+
+
+        <div id="content" style="height: auto !important;">
+
+            <article class="post clearfix" style="height: auto !important;">
+
+
+
+
+
+
+
+                <center>
+                    <form class="request">
+                        <span class="add-on"><b>จำนวนวิชาทั้งหมด</b></span>
+                        <input size="1" class="content-box-program-inputbox" id="total_subject" type="text">
+                        <button class="content-box-program-bottoncalc btn-danger" type="submit" id="gen_submit">ตกลง</button>
+                    </form>
+
+                    <table class="table table-condensed" style="display: table; opacity: 1;">
+                        <thead>
+                            <tr>
+                                <th> </th>
+                                <th>ชื่อวิชา</th>
+                                <th style="text-align:center;">หน่วยกิต</th>
+                                <th style="text-align:center;">เกรดที่ได้</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table_display"><tr><td>1</td><td><input type="text" size="6" id="name_0" class="content-box-program-inputbox"></td><td><input type="text" size="7" class="content-box-program-inputbox" id="credit_0"></td><td><input type="text" size="4" id="grade_0" class="content-box-program-inputbox"></td></tr><tr><td>2</td><td><input type="text" size="6" id="name_1" class="content-box-program-inputbox"></td><td><input type="text" size="7" class="content-box-program-inputbox" id="credit_1"></td><td><input type="text" size="4" id="grade_1" class="content-box-program-inputbox"></td></tr></tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td style="text-align: left;">
+                                    <input type="button" value="คำนวณ" onclick="cal_grade();" class="content-box-program-bottoncalc">
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td style="text-align: right;">เกรดเฉลี่ย</td>
+                                <td><input type="text" size="5" id="grade" readonly="" class="content-box-program-inputbox"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td style="text-align: right;"><input type="button" value="  Print  " onclick="printpage()" size="20"></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+
+                </center>
+                <br> <br>
+
+
+
+            </article>
+            <!-- /.post -->
+
+        </div>
+
+
+
+
+    </div>
+</body>
